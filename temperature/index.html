@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <video autoplay loop muted id="background-video">
+        <source src="C:\Users\PRAJWAL\Downloads\11362100-uhd_3840_2160_24fps.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="welcome-page" id="welcomePage">
+        <div class="welcome-content">
+            <h1>Welcome to the Temperature Converter!</h1>
+            <p>Convert temperatures between Celsius, Fahrenheit, and Kelvin easily.</p>
+            <button id="startBtn">Start</button>
+        </div>
+    </div>
+
+    <div class="container" id="converterPage" style="display: none;">
+        <h1>Temperature Converter</h1>
+
+        <div class="input-section">
+            <input type="number" id="temperature" placeholder="Enter temperature" />
+            <span id="input-error" class="error-message">Please enter a valid number!</span>
+        </div>
+
+        <div class="unit-selection">
+            <div class="unit-group">
+                <label for="fromUnit">From:</label>
+                <select id="fromUnit">
+                    <option value="celsius">Celsius</option>
+                    <option value="fahrenheit">Fahrenheit</option>
+                    <option value="kelvin">Kelvin</option>
+                </select>
+            </div>
+
+            <div class="unit-group">
+                <label for="toUnit">To:</label>
+                <select id="toUnit">
+                    <option value="celsius">Celsius</option>
+                    <option value="fahrenheit">Fahrenheit</option>
+                    <option value="kelvin">Kelvin</option>
+                </select>
+            </div>
+        </div>
+
+        <button id="convertBtn">Convert</button>
+
+       
+        <div class="result" id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
